@@ -13,56 +13,32 @@ Usage Example
 ============
 ### Lookup Domain Information
 
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
-
 ```
 require 'ip2whois_ruby'
 
 Ip2whoisRuby::Configuration.api_key = 'YOUR_API_KEY'
 
-result = Ip2whoisRuby::Api.lookup(
-  domain: 'example.com'
-)
+result = Ip2whoisRuby::Api.lookup('example.com')
 ```
 
 
 
 ### Convert Normal Text to Punycode
 
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | :-----------: | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
-
 ```
 require 'ip2whois_ruby'
 
-result = Ip2whoisRuby::Api.get_punycode(
-  domain: 'xn--tst-qla.de'
-)
+result = Ip2whoisRuby::Api.get_punycode('xn--tst-qla.de')
 ```
 
 
 
 ### Convert Punycode to Normal Text
 
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | :-----------: | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
-
 ```
 require 'ip2whois_ruby'
 
-result = Ip2whoisRuby::Api.get_normal_text(
-  domain: 'täst.de'
-)
+result = Ip2whoisRuby::Api.get_normal_text('täst.de')
 ```
 
 
