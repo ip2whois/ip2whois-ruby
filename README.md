@@ -28,7 +28,7 @@ result = Ip2whoisRuby::Api.lookup('example.com')
 ```
 require 'ip2whois_ruby'
 
-result = Ip2whoisRuby::Api.get_punycode('xn--tst-qla.de')
+result = Ip2whoisRuby::Api.get_punycode('täst.de')
 ```
 
 
@@ -38,7 +38,7 @@ result = Ip2whoisRuby::Api.get_punycode('xn--tst-qla.de')
 ```
 require 'ip2whois_ruby'
 
-result = Ip2whoisRuby::Api.get_normal_text('täst.de')
+result = Ip2whoisRuby::Api.get_normal_text('xn--tst-qla.de')
 ```
 
 

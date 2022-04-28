@@ -24,12 +24,12 @@ module Ip2whoisRuby
 
     # Get Punycode.
     def self.get_punycode(domain)
-        return SimpleIDN.to_unicode(domain)
+        return SimpleIDN.to_ascii(domain)
     end
 
     # Get Normal text.
     def self.get_normal_text(domain)
-        return SimpleIDN.to_ascii(domain)
+        return SimpleIDN.to_unicode(domain)
     end
 
   end

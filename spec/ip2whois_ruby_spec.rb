@@ -13,13 +13,13 @@ describe "Ip2whoisRuby" do
   end
 
   it "work correctly with get punycode" do
-    result = Ip2whoisRuby::Api.get_punycode('xn--tst-qla.de')
-    expect(result).to eq 'täst.de'
+    result = Ip2whoisRuby::Api.get_punycode('täst.de')
+    expect(result).to eq 'xn--tst-qla.de'
   end
 
   it "work correctly with get normal text" do
-    result = Ip2whoisRuby::Api.get_normal_text('täst.de')
-    expect(result).to eq 'xn--tst-qla.de'
+    result = Ip2whoisRuby::Api.get_normal_text('xn--tst-qla.de')
+    expect(result).to eq 'täst.de'
   end
 
 end
