@@ -11,7 +11,7 @@ This module requires API key to function. You may sign up for a free API key at 
 Usage Example
 ============
 ### Lookup Domain Information
-```
+```ruby
 require 'ip2whois_ruby'
 
 Ip2whoisRuby::Configuration.api_key = 'YOUR_API_KEY'
@@ -20,14 +20,14 @@ result = Ip2whoisRuby::Api.lookup('example.com')
 ```
 
 ### Convert Normal Text to Punycode
-```
+```ruby
 require 'ip2whois_ruby'
 
 result = Ip2whoisRuby::Api.get_punycode('täst.de')
 ```
 
 ### Convert Punycode to Normal Text
-```
+```ruby
 require 'ip2whois_ruby'
 
 result = Ip2whoisRuby::Api.get_normal_text('xn--tst-qla.de')
@@ -92,7 +92,7 @@ Response Parameter
 |billing.email|string|Billing email address.|
 |name_servers|array|Name servers|
 
-```
+```json
 {
     "domain": "greendot.com",
     "domain_id": "600750_DOMAIN_COM-VRSN",
