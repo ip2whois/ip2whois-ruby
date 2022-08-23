@@ -33,6 +33,22 @@ require 'ip2whois_ruby'
 result = Ip2whoisRuby::Api.get_normal_text('xn--tst-qla.de')
 ```
 
+### Get Domain Name
+```ruby
+require 'ip2whois_ruby'
+
+# Get domain name from URL
+result = Ip2whoisRuby::Api.get_domain_name('https://www.example.com/exe')
+```
+
+### Get Domain Extension
+```ruby
+require 'ip2whois_ruby'
+
+# Get domain extension (gTLD or ccTLD) from URL or domain name
+result = Ip2whoisRuby::Api.get_domain_extension('example.com')
+```
+
 
 Response Parameter
 ============

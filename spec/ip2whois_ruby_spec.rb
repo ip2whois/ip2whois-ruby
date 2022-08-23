@@ -22,4 +22,14 @@ describe "Ip2whoisRuby" do
     expect(result).to eq 'täst.de'
   end
 
+  it "work correctly with get domain name" do
+    result = Ip2whoisRuby::Api.get_domain_name('https://www.example.com/exe')
+    expect(result).to eq 'example.com'
+  end
+
+  it "work correctly with get domain extension" do
+    result = Ip2whoisRuby::Api.get_domain_extension('https://www.example.com/exe')
+    expect(result).to eq '.com'
+  end
+
 end
