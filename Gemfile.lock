@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    ip2whois_ruby (2.2.0)
+      simpleidn (>= 0.2.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    simpleidn (0.2.1)
+      unf (~> 0.1.4)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  ip2whois_ruby!
+
+BUNDLED WITH
+   2.4.13
