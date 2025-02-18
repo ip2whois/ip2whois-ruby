@@ -32,6 +32,15 @@ Gem::Specification.new do |s|
     "spec/ip2whois_ruby_spec.rb"
   ]
 
+  if s.respond_to?(:metadata=)
+    s.metadata = {
+      "bug_tracker_uri" => "https://github.com/ip2whois/ip2whois-ruby/issues",
+      "documentation_uri" => "https://www.rubydoc.info/gems/ip2whois_ruby",
+      "homepage_uri" => "https://www.ip2whois.com",
+      "source_code_uri" => "https://github.com/ip2whois/ip2whois-ruby",
+    }
+  end
+
   if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
     s.add_runtime_dependency(%q<simpleidn>, [">= 0.2.1"])
   else
